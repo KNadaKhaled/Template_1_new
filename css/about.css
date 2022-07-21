@@ -1,0 +1,38 @@
+.about-content{
+    overflow: hidden;
+}
+
+.about-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border:0.2px groove #f8f4f4;
+    padding: 50px 25px; 
+    border-radius: 20px;
+    height: 400px;
+}
+.about-item .icon{
+    color:#204fd1;
+ 
+}
+ .about-item-title{
+text-transform: capitalize;
+}
+.about-item:hover .about-item-title{
+    color:#fff;
+    transition:color 1.5s;
+}
+.about-item-desc{
+    line-height: 1.5;
+    color:#ff89ff;
+    text-align:center
+}
+.about-item .link{
+    color:#601cfc;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.about-item.mg{
+    margin: 0 5%;
+}

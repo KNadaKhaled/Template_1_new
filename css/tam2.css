@@ -1,0 +1,271 @@
+/*commad*/
+/*
+2- General Styles 
+3- Sections 
+    3-0 Header Section
+    3-1 Home section 
+    3-2 About section
+    3-4 Portfolio section
+    3-5 services section
+    3-6 Team section
+    3-7 Bloge section
+    3-8 Contact section
+    3-9 Footer section
+    
+    */
+    /*ganeral*/
+   .pd-y{
+    padding: 120px 0; 
+   }
+   .section-header{
+       text-align: center;
+       text-transform: capitalize;
+   }
+
+/*
+/*
+  Common styles 
+*- Overlay.
+*- opacity hover.
+*- section header.
+*- section padding.
+*- hover effect 1 ( left to right ).
+*- hover effect 2 ( top to bottom ).
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.offer-overlay{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    right: 0;
+   height:100%;
+    background-color: rgba(0,0,0,0.4);
+   transition: width 0.8s;
+}
+.ltr-effect:hover::after{
+    width: 100%;
+}
+.section-header{
+    text-align: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+   position: relative;
+}
+/*section-header*/
+.header{
+    background-color:rgba(0,0,0,0.4);
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+.header .logo{
+    width: 50%;
+    float: left;
+}
+.header .logo img{
+    width:30%;
+    height: 90px;
+    margin-top: 3px;
+}
+.header .nav{
+    list-style: none;
+    width: 50%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.nav > li{
+    display: inline-block;
+    text-align: center;
+}
+
+.nav > li >a{
+    text-decoration: none;
+    padding: 20px 11px;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.header .nav > li > a::after,
+.header .nav > li >a.active::after{
+    content: "";
+    background-color: blue;
+    height: 3px;
+    margin-top: 2px;
+    display: block;
+    transition: width 0.8s;
+}
+.header .nav > li >a.active::after{
+    width: 100%;
+}
+
+.header .nav > li >a::after{
+    width: 0;
+}
+.header .nav > li >a:hover::after{
+    width: 100%;
+}
+
+/*section header*/
+.comments{
+    position: relative;
+    top: 100%;
+}
+.section-header .section-title{
+    font-size: 3em;
+  text-align: start;
+  margin-left: 3em;
+    text-transform: capitalize;
+    color: lightcoral;
+}
+
+.section-header .liner{
+   display: block;
+   background-color: #6195ff;
+   width: 100px;
+   height: 3px;
+   margin: 3px 69em 70px auto;
+}
+    .comment-content{
+        overflow: hidden;
+        text-align: center;
+    }
+    .comment-item{
+        width: 60%;
+        float: left;
+        margin-bottom: -10em;
+    }
+
+  .comment-item .comment-toplayer{
+      position: relative;
+    
+  }
+  .comment-toplayer img{
+      width: 200px;
+      height: 100px;
+      border-radius: 15px;
+      border: 2px solid #6195ff;
+      margin: 2px 30px 2px -30em;
+  }
+
+
+  .item-info{
+      text-align:left;
+      width: 500px;
+      height: 300px;
+      margin-left: 16em;
+      margin-top:-6.5em;
+      color: #6195ff;
+      word-spacing: 1.5px;
+      word-break: break-all;
+      text-align: justify;
+      letter-spacing: 1.5;
+  }
+  .item-info .item-name{
+      font-size: 25px;
+      color: #444;
+  }
+  .item-info .item-time-comment{
+      display: inline-block;
+      margin-left: 5px;
+      padding: 2px 2px;
+      color: #333;
+  }
+
+  .item-info .item-comment-desc{
+      color: rgb(15, 15, 93);
+      font-weight: bold;
+      font-size: 14px;
+      margin-left: 5px;
+  }
+
+  .item-title-side{
+      color: lightcoral;
+      font-size: 2em;
+      margin-bottom: 2px;
+  }
+  .item-desc-side{
+      text-align: justify;
+      margin-left: 20em;
+      word-break: break-all;
+      width: 1000px;
+  }
+ 
+  
+
+.clear{
+    clear: both;
+}
+
+/*footer*/
+.footer{
+    color: #666;
+    background-color: #beee;
+    text-align: center;
+    padding:30px;
+    margin: 10em 0 0 0;
+}
+.footer img{
+    width: 10%;
+    height: 10%;
+    margin-left: 13em;
+}
+.footer-list li i{
+    font-size: 20px;
+}
+.footer p{
+    margin-left: 13em;
+}
+
+.footer-list{
+    list-style:none;
+    margin-left: 13em;
+ 
+}
+.footer-list li{
+    display: inline-block;
+    padding: 20px;
+    line-height:50px ;
+}
+
+.footer-list li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #737373;
+    color: #6195ff;
+    border-radius: 50%;
+}
+
+
+
